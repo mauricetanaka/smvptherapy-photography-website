@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #FFD700;
+    --secondary-color: #555;
+    --text-color: #fff;
+    --bg-color: #800000;
+    --navbar-bg: transparent;
+    --footer-bg: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6 {
+    color: #d8d8d8;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    font-size: 16px;
+    padding-top: 0.5rem !important; /* Decreased padding */
+    padding-bottom: 0.5rem !important; /* Decreased padding */
+    background-color: var(--navbar-bg);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: rgb(15, 8, 8);
+    margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(14, 7, 7);
+    font-size: 1.1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+    background-color: #444;
+}
+
+.nav-item .fa-cart-flatbed-suitcase, .nav-item .fa-user-large {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-item .fa-cart-flatbed-suitcase:hover, .nav-item .fa-user-large:hover {
+    color: var(--primary-color);
+}
+
+/* Custom styling for the logo */
+.logo {
+    height: 30px; /* Adjust the height to be shorter */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Right align the navbar items */
+.navbar-nav {
+    margin-left: auto;
+}
+
+
+/* Custom styling for the logo */
+.logo {
+    height: 40px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+/* Home Section */
+#home {
+    background-image: url('../images/projectImg/background1.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home .btn {
+    margin: 0.5rem;
+}
+
+.text-white {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+/* Background Wrapper */
+.bg-wrapper {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem 0;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#about .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pricing Section */
+#pricing {
+    background-image: url('../images/projectImg/background3.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pricing .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#pricing .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#pricing .card-text {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+#pricing .list-unstyled {
+    margin-bottom: 1rem;
+}
+
+#pricing .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Login Section */
+#login {
+    background-image: url('../images/projectImg/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#login .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login .form-label {
+    font-weight: 600;
+}
+
+#login .form-control {
+    border-radius: 0.5rem;
+}
+
+#login .btn {
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+#login .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#login a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#login a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Section */
+#portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+#portfolio .portfolio-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Portfolio Modal */
+.portfolio-modal .modal-content {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+}
+
+.portfolio-modal .modal-header .btn-close {
+    background-color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.portfolio-modal .modal-body img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    background-image: url('../images/projectImg/background4.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact .form-label {
+    font-weight: 500;
+}
+
+#contact .form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#contact .btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Cinematography Section */
+#cinematography {
+    background-color: #c7c426;
+    color: #333;
+    padding: 2rem 0;
+}
+
+#cinematography h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#cinematography p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#cinematography .embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+#cinematography .embed-responsive::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+#cinematography .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-bg);
+    padding: 2rem 0;
+    color: #fff;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+footer .btn {
+    margin-top: 1rem;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    #home, #contact, #pricing, #login, #cinematography {
+        padding: 1rem;
+    }
+
+    .bg-wrapper {
+        padding-top: 3rem;
+    }
+}
